@@ -1,0 +1,21 @@
+/*Global*/
+:root {
+  /*Font Size*/
+  --font-large: 48px;
+  --font-medium: 28px;
+  --font-regular: 18px;
+  --font-samall: 16px;
+  --font-micro: 14px;
+
+  /*Font Weigth*/
+  --weight-bold: 700;
+  --weight-semi-bold: 600;
+  --weight-redular: 400;
+
+  /*Size*/
+}
+
+/* Univarsal tags */
+* {
+  box-sizing: border-box;
+}
