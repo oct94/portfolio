@@ -14,6 +14,9 @@
 
   /*Radius*/
   --size-border-radius: 5px;
+
+  /* Color */
+  --color-light: #e8dfff;
 }
 
 /* Univarsal tags */
@@ -262,4 +265,87 @@ button {
 .skill__value {
   height: 3px;
   background-color: hotpink;
+}
+
+/* Work */
+.category__btn {
+  border: 1px solid grey;
+  border-radius: 10px;
+  font-size: var(--font-regular);
+  padding: 8px 48px;
+}
+
+.work__categories {
+  margin: 40px;
+}
+
+.category__btn.active,
+.category__btn:hover {
+  background-color: var(--color-light);
+}
+
+.category__btn.active .category__count,
+.category__btn:hover .category__count {
+  opacity: 1;
+  top: 0;
+}
+
+.category__count {
+  background-color: orange;
+  border-radius: 50%;
+  color: white;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  display: inline-block;
+  margin-left: 5px;
+  position: relative;
+  top: -20px;
+  opacity: 0;
+  transition: all 300ms ease;
+}
+
+.work__projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+}
+
+.project {
+  position: relative;
+  background-color: var(--color-light);
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project__img {
+  width: 250px;
+  height: 250px;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 2px;
+}
+
+.project__description {
+  position: absolute;
+  background-color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  opacity: 0;
+  transition: all 300ms ease;
+  transform: translateY(10px);
+}
+
+.project:hover .project__description {
+  opacity: 0.8;
+  transform: translateY(0px);
 }
