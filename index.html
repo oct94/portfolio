@@ -45,19 +45,21 @@
       </div>
     </nav>
     <!-- Home -->
-    <section id="home">
+    <section id="home" class="section section__container">
       <img
         src="img/취업사진 (2).png"
         alt="profile photo"
         class="home__avatar"
       />
-      <h1 class="home__title">안녕하세요, <br />채희태 입니다.</h1>
-      <h2 class="home__description">프론트엔드 개발자를 꿈꾸고 있습니다.</h2>
-      <button>Contact Me</button>
+      <h1 class="home__title">안녕하세요.</h1>
+      <h2 class="home__description">
+        프론트엔드 개발자를 꿈꾸고 있는<br />채희태 입니다.
+      </h2>
+      <button class="home__contact">Contact Me</button>
     </section>
     <!-- About -->
-    <section id="about">
-      <h1>나에 대해</h1>
+    <section id="about" class="section section__container">
+      <h1>자기소개</h1>
       <p>
         대학 시절 파이썬으로 처음 코딩을 접하였습니다. 이후 재미를 느껴 아두이노
         프로그래밍으로 공모전 작품을 만들곤 했습니다. 졸업 후 프론트엔드
@@ -76,7 +78,7 @@
         </div>
         <div class="major">
           <div class="major__icon">
-            <i class="fab fa-node-js"></i>
+            <i class="fab fa-node"></i>
           </div>
           <div class="major__title">백엔드</div>
           <div class="major__description">
@@ -94,24 +96,34 @@
       <div class="about__educations">
         <div class="education">
           <div class="education__icon">
-            <i class="fas fa-globe-asia"></i>
+            <img
+              src="https://mblogthumb-phinf.pstatic.net/MjAxOTA3MDlfMTQz/MDAxNTYyNjQzODQyNjM5.c_e6Awvu9Jbin-mLsBNSKAPWBARMVvQ-NGN2B_8_cM8g.mUi03O3dSPRhL6nI848gBWVZ5143hz2YGyfoM79LPQsg.JPEG.wingspeech_crw/%ED%95%9C%EA%B4%91%EB%8C%80CI.jpg?type=w800"
+              alt="logo"
+            />
           </div>
-          <div class="education__university">한국관광대학</div>
-          <div class="education__major">관광일본어학과</div>
-          <div class="education__period">2014~2018</div>
+          <div class="education__description">
+            <div class="education__university">한국관광대학</div>
+            <div class="education__major">관광일본어학과</div>
+            <div class="education__period">2014~2018 (편입)</div>
+          </div>
         </div>
         <div class="education">
           <div class="education__icon">
-            <i class="fas fa-microscope"></i>
+            <img
+              src="https://ww.namu.la/s/a43b1c98386b9e87bcb896b018e15e67f4b6ae9becf6939534d70b66cd54ee90328d57623a3a1a223a0a55b54457c88a185a85ab21eeec14656c1a68192e015fd285edbf5a2afc4df9c0696810273de297a0cd37d3511dc08c3fd1e39410ed02f450d85be4fca33eaec824f0aa09ab1d"
+              alt="logo"
+            />
           </div>
-          <div class="education__university">전북대학교</div>
-          <div class="education__major">it응용시스템공학과</div>
-          <div class="education__period">2019~2021</div>
+          <div class="education__description">
+            <div class="education__university">전북대학교</div>
+            <div class="education__major">it응용시스템공학과</div>
+            <div class="education__period">2019~2021 (졸업)</div>
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills -->
-    <section id="skills">
+    <section id="skills" class="section">
       <h1>기술</h1>
       <h2></h2>
       <p></p>
@@ -124,7 +136,7 @@
               <span>80%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 80%"></div>
             </div>
           </div>
           <div class="skill">
@@ -133,7 +145,7 @@
               <span>70%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 70%"></div>
             </div>
           </div>
           <div class="skill">
@@ -142,7 +154,7 @@
               <span>75%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 75%"></div>
             </div>
           </div>
           <div class="skill">
@@ -151,7 +163,7 @@
               <span>80%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 80%"></div>
             </div>
           </div>
           <div class="skill">
@@ -160,20 +172,20 @@
               <span>60%</span>
             </div>
             <div class="skill__bar">
-              <div class="skill__value"></div>
+              <div class="skill__value" style="width: 60%"></div>
             </div>
           </div>
         </div>
         <div class="skillset__right">
           <div class="tools">
-            <h3 class="skillset__title">Tools</h3>
+            <h3 class="skillset__tools__title">Tools</h3>
             <ul class="tools__list">
               <li><span>Git</span></li>
               <li><span>VS Code</span></li>
             </ul>
           </div>
           <div class="etc">
-            <h3 class="skillset__title">Etc</h3>
+            <h3 class="skillset__etc__title">Etc</h3>
             <ul class="etc__list">
               <li><span>English</span></li>
               <li><span>Japanese</span></li>
@@ -183,7 +195,7 @@
       </div>
     </section>
     <!-- Work -->
-    <section id="work">
+    <section id="work" class="section section__container">
       <h1>프로젝트</h1>
       <div class="work__categories">
         <button class="category__btn">
@@ -218,7 +230,7 @@
       </div>
     </section>
     <!-- Contact -->
-    <section id="contact">
+    <section id="contact" class="section section__container">
       <h1 class="contact__title">연락처</h1>
       <h2 class="contact__email">chaeheetae94@gmail.com</h2>
       <h2 class="contact__phone">010-5367-1193</h2>
