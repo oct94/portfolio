@@ -72,13 +72,22 @@ button {
 
 /* Navbar */
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background: url("/img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경\ \(1\).png")
-    center/cover no-repeat;
+  background-color: transparent;
   align-items: center;
   color: white;
   padding: 16px;
+  transition: all 300ms ease;
+}
+
+#navbar.navbar--dark {
+  background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경\ \(1\).png")
+    center/cover no-repeat;
+  z-index: 1;
+  opacity: 0.8;
 }
 .navbar__logo {
   font-size: var(--font-medium);
@@ -117,6 +126,7 @@ button {
   background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경.png")
     center/cover no-repeat;
   padding: 40px;
+  padding-top: 120px;
   text-align: center;
   max-width: 1500px;
 }
@@ -155,6 +165,12 @@ button {
 }
 
 /* About */
+.introduce__description {
+  max-width: 600px;
+  text-align: center;
+  margin: auto;
+}
+
 .about__majors {
   display: flex;
   justify-content: space-around;
