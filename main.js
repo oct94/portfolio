@@ -5,8 +5,6 @@ const nabvar = document.querySelector("#nabvar");
 const navbarHeight = navbar.getBoundingClientRect().height;
 
 document.addEventListener("scroll", () => {
-  console.log("scroll=> " + window.scrollY);
-  console.log("height=> " + navbarHeight);
   if (window.scrollY > navbarHeight) {
     navbar.classList.add("navbar--dark");
   } else {
@@ -17,15 +15,29 @@ document.addEventListener("scroll", () => {
 //navbar를 클릭하면 해당 섹션으로 스크롤링함.
 const navbarMenu = document.querySelector(".navbar__menu");
 navbarMenu.addEventListener("click", (event) => {
-  const target = event.target;
-  const link = target.dataset.link;
+  const link = event.target.dataset.link;
   if (link == undefined) {
     return;
   }
   const scrollTo = document.querySelector(link);
   scrollTo.scrollIntoView({
     behavior: "smooth",
-    block: "end",
-    inline: "nearest",
   });
+});
+
+//contact를 클릭하면 해당 섹션으로 스크롤링함.
+const contact = document.querySelector(".home__contact");
+contact.addEventListener("click", (event) => {
+  const link = event.target.dataset.link;
+  const scrollTo = document.querySelector(link);
+  scrollTo.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+//스크롤이 내려가면 home의 투명도를 서서히 높여줌.
+const home = document.querySelector("#home");
+const homeHeight = home.getBoundingClientRect().height;
+document.addEventListener("scroll", () => {
+  home.style.opacity = 1 - window.scrollY / homeHeight;
 });
