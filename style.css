@@ -106,11 +106,13 @@ button {
   padding: 8px 12px;
   margin: 0 4px;
   cursor: pointer;
+  border: 1px solid transparent;
   border-radius: var(--size-border-radius);
 }
 
 .navbar__menu__item:hover {
   background-color: violet;
+  border-color: white;
 }
 
 .navbar__toggle-btn {
@@ -300,12 +302,12 @@ button {
   margin: 40px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-light);
 }
 
-.category__btn.active .category__count,
+.category__btn.selected .category__count,
 .category__btn:hover .category__count {
   opacity: 1;
   top: 0;
@@ -433,12 +435,13 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
+    background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경\ \(1\).png")
+      center/cover no-repeat;
   }
   .navbar__menu {
     flex-direction: column;
     text-align: center;
     width: 100%;
-    display: none;
   }
   .about__majors {
     flex-direction: column;
@@ -451,5 +454,9 @@ button {
   }
   .project {
     flex-grow: 1;
+  }
+
+  .navbar__menu.close {
+    display: none;
   }
 }

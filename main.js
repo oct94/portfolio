@@ -78,4 +78,15 @@ workBtnContainer.addEventListener("click", (event) => {
   setTimeout(() => {
     projectContainer.classList.remove("anime-out");
   }, 300);
+  //클릭한 버튼에 보더와 색을 줌.
+  const active = document.querySelector(".selected");
+  active.classList.remove("selected");
+  event.target.classList.add("selected");
+});
+
+//작은 화면에서 클릭시 navbar가 나오도록.
+const moreBtn = document.querySelector(".navbar__toggle-btn");
+moreBtn.addEventListener("click", (event) => {
+  const navbarMenu = document.querySelector(".navbar__menu");
+  navbarMenu.classList.toggle("close");
 });
