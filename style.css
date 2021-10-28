@@ -84,8 +84,7 @@ button {
 }
 
 #navbar.navbar--dark {
-  background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경\ \(1\).png")
-    center/cover no-repeat;
+  background: url("./img/background-original.png") center/cover no-repeat;
   z-index: 1;
   opacity: 0.8;
 }
@@ -125,8 +124,7 @@ button {
 
 /* Home */
 #home {
-  background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경.png")
-    center/cover no-repeat;
+  background: url("./img/background-designed.png") center/cover no-repeat;
   padding: 40px;
   padding-top: 120px;
   text-align: center;
@@ -392,8 +390,7 @@ button {
 }
 
 #contact {
-  background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경\ \(1\).png")
-    center/cover no-repeat;
+  background: url("./img/background-original.png") center/cover no-repeat;
 }
 
 .contact__title,
@@ -451,8 +448,7 @@ button {
   #navbar {
     flex-direction: column;
     align-items: flex-start;
-    background: url("./img/파란색\ 및\ 분홍색\ 꽃\ 줌\ 가상\ 배경\ \(1\).png")
-      center/cover no-repeat;
+    background: url("./img/background-original.png") center/cover no-repeat;
   }
   .navbar__menu {
     flex-direction: column;
