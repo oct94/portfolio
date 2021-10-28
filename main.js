@@ -41,3 +41,41 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   home.style.opacity = 1 - window.scrollY / homeHeight;
 });
+
+//arrow up 버튼을 누르면 화면을 맨 위로 올려줌. (스크롤 될 떄만 보임.)
+const arrowUp = document.querySelector(".arrow__up");
+document.addEventListener("scroll", () => {
+  if (window.scrollY > homeHeight / 2) {
+    arrowUp.classList.add("visible");
+  } else {
+    arrowUp.classList.remove("visible");
+  }
+});
+arrowUp.addEventListener("click", () => {
+  const scrollTo = document.querySelector("#home");
+  scrollTo.scrollIntoView({
+    behavior: "smooth",
+  });
+});
+
+//카테고리에 따라 프로젝트가 필터링되어 나오게함.
+//버튼 클릭 => data-filter과 같은 data-type을 보여줌.
+const workBtnContainer = document.querySelector(`.work__categories`);
+const projectContainer = document.querySelector(`.work__projects`);
+//프로젝트를 배열로 전부 다 받아옴.
+const projects = document.querySelectorAll(`.project`);
+workBtnContainer.addEventListener("click", (event) => {
+  const filter =
+    event.target.dataset.filter || event.target.parentNode.dataset.filter;
+  projectContainer.classList.add("anime-out");
+  projects.forEach((project) => {
+    if (filter === "*" || filter === project.dataset.type) {
+      project.classList.remove("invisible");
+    } else {
+      project.classList.add("invisible");
+    }
+  });
+  setTimeout(() => {
+    projectContainer.classList.remove("anime-out");
+  }, 300);
+});
