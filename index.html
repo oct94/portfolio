@@ -43,11 +43,20 @@
     </nav>
     <!-- Home -->
     <section id="home" class="section section__container">
-      <img src="./img/profile.png" alt="profile photo" class="home__avatar" />
-      <h1 class="home__title">안녕하세요.</h1>
-      <h2 class="home__description">
-        프론트엔드 개발자를 꿈꾸고 있는<br />채희태 입니다.
-      </h2>
+      <div class="home__profile">
+        <div class="home__profile-documentation">
+          <h1 class="home__title">안녕하세요.</h1>
+          <h2 class="home__description">
+            프론트엔드 개발자를 꿈꾸고 있는<br />채희태 입니다.<br />관심가져
+            주셔서 감사합니다.
+          </h2>
+        </div>
+        <img
+          src="img/profile-image.png"
+          alt="profile photo"
+          class="home__avatar"
+        />
+      </div>
       <button class="home__contact" data-link="#contact">Contact Me</button>
     </section>
     <!-- About -->
@@ -59,40 +68,11 @@
         등의 활동을 했습니다. 졸업 후 프론트엔드 개발자에 대해 알게 된 후 진로를
         정하게 되었고 프론트엔드 개발자가 되기 위해 재미있게 공부하고 있습니다.
       </p>
-      <div class="about__majors">
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-react"></i>
-          </div>
-          <div class="major__title">프론트엔드</div>
-          <div class="major__description">
-            HTML, CSS, JavaScript<br />React, Redux
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fab fa-node"></i>
-          </div>
-          <div class="major__title">백엔드</div>
-          <div class="major__description">
-            JavaScript<br />Node.js, Express , MongoDB
-          </div>
-        </div>
-        <div class="major">
-          <div class="major__icon">
-            <i class="fas fa-network-wired"></i>
-          </div>
-          <div class="major__title">기타</div>
-          <div class="major__description">REST API, PostMan, etc</div>
-        </div>
-      </div>
+
       <div class="about__educations">
         <div class="education">
           <div class="education__icon">
-            <img
-              src="https://mblogthumb-phinf.pstatic.net/MjAxOTA3MDlfMTQz/MDAxNTYyNjQzODQyNjM5.c_e6Awvu9Jbin-mLsBNSKAPWBARMVvQ-NGN2B_8_cM8g.mUi03O3dSPRhL6nI848gBWVZ5143hz2YGyfoM79LPQsg.JPEG.wingspeech_crw/%ED%95%9C%EA%B4%91%EB%8C%80CI.jpg?type=w800"
-              alt="logo"
-            />
+            <img src="img/한국관광대로고.png" alt="logo" />
           </div>
           <div class="education__description">
             <div class="education__university">한국관광대학</div>
@@ -102,10 +82,7 @@
         </div>
         <div class="education">
           <div class="education__icon">
-            <img
-              src="https://ww.namu.la/s/a43b1c98386b9e87bcb896b018e15e67f4b6ae9becf6939534d70b66cd54ee90328d57623a3a1a223a0a55b54457c88a185a85ab21eeec14656c1a68192e015fd285edbf5a2afc4df9c0696810273de297a0cd37d3511dc08c3fd1e39410ed02f450d85be4fca33eaec824f0aa09ab1d"
-              alt="logo"
-            />
+            <img src="img/전북대로고.png" alt="logo" />
           </div>
           <div class="education__description">
             <div class="education__university">전북대학교</div>
@@ -201,6 +178,33 @@
         </div>
       </div>
     </section>
+    <div class="about__majors">
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-react"></i>
+        </div>
+        <div class="major__title">프론트엔드</div>
+        <div class="major__description">
+          HTML, CSS, JavaScript<br />React, Redux
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fab fa-node"></i>
+        </div>
+        <div class="major__title">백엔드</div>
+        <div class="major__description">
+          JavaScript<br />Node.js, Express , MongoDB
+        </div>
+      </div>
+      <div class="major">
+        <div class="major__icon">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <div class="major__title">기타</div>
+        <div class="major__description">REST API, PostMan, etc</div>
+      </div>
+    </div>
     <!-- Work -->
     <section id="work" class="section section__container">
       <h1>프로젝트</h1>
