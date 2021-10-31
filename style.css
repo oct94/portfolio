@@ -76,7 +76,7 @@ button {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: transparent;
+  background-color: rgb(4, 37, 65);
   align-items: center;
   color: white;
   padding: 16px;
@@ -493,6 +493,7 @@ button {
   .navbar__toggle-btn {
     display: block;
   }
+
   #navbar {
     flex-direction: column;
     align-items: flex-start;
