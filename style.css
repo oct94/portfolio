@@ -171,8 +171,8 @@ button {
 }
 
 .home__contact:hover {
-  background-color: #e8dfff;
-  color: black;
+  background-color: rgb(4, 37, 65);
+  color: white;
 }
 
 /* Section common */
@@ -339,7 +339,7 @@ button {
 
 .skill__value {
   height: 3px;
-  background-color: hotpink;
+  background-color: rgb(4, 37, 65);
 }
 
 /* Work */
